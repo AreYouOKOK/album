@@ -1,0 +1,51 @@
+#°´Å¥ÑùÊ½
+.flatbtn{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	display:inline-block;
+	outline:0;
+	border:0;
+	color:#f3faef;
+	text-decoration:none;
+	background-color:#6bb642;
+	border-color:rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	font-size:1.2em;
+	font-weight:bold;
+	margin-left:5opx;
+	padding:12px 22px 12px 22px;
+	line-height:normal;
+	text-align:center;
+	vertical-align:middle;
+	cursor:pointer;
+	text-transform:uppercase;
+	text-shadow:0 1px 0 rgba(0,0,0,0.3);
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	-webkit-box-shadow:0 1px 0 rgba(15, 15, 15, 0.3);
+	-moz-box-shadow:0 1px 0 rgba(15, 15, 15, 0.3);
+	box-shadow:0 1px 0 rgba(15, 15, 15, 0.3);
+}
+.flatbtn:hover{
+	color:#fff;
+	background-color:#73c437;
+}
+.flatbtn:active{
+	-webkit-box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.1);
+	box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+li{
+   list-style:none;
+   float:left;
+   margin:10px;
+ }
+ .albumCover{
+  width:158px;
+  height:183px;
+ }
+.albumName{
+	margin-left:auto;
+	margin-right:auto;
+}
