@@ -8,16 +8,18 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-
+@WebFilter(filterName = "requestFilter", urlPatterns = { "*" })
 public class RequestFilter implements Filter {
-	private static Log log =  
-            LogFactory.getLog(RequestFilter.class.getName());  
+	
+	private static Log log =  LogFactory.getLog(RequestFilter.class.getName()); 
+	
 	public void destroy() {
 	}
 
