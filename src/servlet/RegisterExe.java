@@ -49,10 +49,6 @@ public class RegisterExe extends HttpServlet {
 			user.setPassword(password);
 			user.setEmail(email);
 			service.addUser(user);
-			//注册成功，发送邮件
-			String subject = "注册成功";
-			String content = "恭喜您成功注册个人相册系统，用户名为："+user.getUsername()+"。请保管好您的用户名密码！";
-			Mail.sendAndCc(Mail.smtp, Mail.from, user.getEmail(), "",subject,content , Mail.username, Mail.password);
 			//重置token,防止重复提交
 			request.getSession().removeAttribute("token");
 			response.sendRedirect("login");

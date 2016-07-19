@@ -8,6 +8,7 @@ import java.util.Date;
 import service.UserService;
 import util.DateUtil;
 import util.JdbcUtil;
+import util.Mail;
 import dao.UserDao;
 import daoImpl.UserDaoImpl;
 import entity.User;
@@ -28,6 +29,10 @@ public class UserServiceImpl implements UserService {
 		}
         try{
         	dao.addUser(conn, user);
+        	//注册成功，发送邮件
+			String subject = "注册成功";
+			String content = "恭喜您成功注册个人相册系统，用户名为："+user.getUsername()+"。请保管好您的用户名密码！";
+			Mail.sendAndCc(Mail.smtp, Mail.from, user.getEmail(), "",subject,content , Mail.username, Mail.password);
         	conn.commit();
         }catch(Exception e){
         	try {

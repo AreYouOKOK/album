@@ -130,7 +130,7 @@
 </head>
 
 <body>
-	<form  method="post" action="sendCode">
+	<form  method="post" action="<%=request.getContextPath()%>/registerExe" id="registerForm">
 		<input type="hidden" name="token"
 			value="<%=session.getAttribute("token") %>" />
 		<table>

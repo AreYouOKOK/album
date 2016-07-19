@@ -4,9 +4,6 @@ xmlns="http://java.sun.com/xml/ns/javaee"
 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
 id="WebApp_ID" version="2.5">
   <display-name>d_album</display-name>
-  <welcome-file-list>
-    <welcome-file>index</welcome-file>
-  </welcome-file-list>
   <resource-ref>
     <description>JNDI</description>
     <res-ref-name>jdbc/mysql</res-ref-name>
